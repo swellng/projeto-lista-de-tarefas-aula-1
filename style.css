@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f4f7;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+    text-align: center;
+    color: #222;
+    margin-bottom: 8px;
+}
+
+.subtitulo {
+    text-align: center;
+    color: #777;
+    margin-bottom: 25px;
+}
+
+.entrada {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.entrada input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+button {
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 12px 18px;
+    font-size: 15px;
+}
+
+#adicionarBtn {
+    background: #2563eb;
+    color: white;
+}
+
+#adicionarBtn:hover {
+    background: #1d4ed8;
+}
+
+#listaTarefas {
+    list-style: none;
+}
+
+#listaTarefas li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 13px;
+    border-bottom: 1px solid #eee;
+}
+
+#listaTarefas li span {
+    flex: 1;
+    cursor: pointer;
+}
+
+#listaTarefas li.concluida span {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.excluir {
+    background: #dc2626;
+    color: white;
+    padding: 8px 12px;
+}
+
+.excluir:hover {
+    background: #b91c1c;
+}
+
+.mensagem {
+    text-align: center;
+    color: #999;
+    margin-top: 20px;
+}
+
+@media (max-width: 500px) {
+    .container {
+        padding: 20px;
+    }
+
+    .entrada {
+        flex-direction: column;
+    }
+}
